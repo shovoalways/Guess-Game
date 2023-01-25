@@ -1,0 +1,144 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;800&display=swap");
+
+/*Common CSS*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100vh;
+}
+body {
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+}
+.container {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/*Header Area*/
+#header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+#header p {
+  font-weight: 800;
+}
+#again {
+  background: #eb3b5a;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 35px;
+  transition: 0.5s;
+}
+#again:hover {
+  background: #ff7979;
+}
+
+/* Hero Area Style */
+#hero_area {
+  padding: 45px 0 0;
+  text-align: center;
+  position: relative;
+}
+#hero_area h2 {
+  font-size: 30px;
+}
+#guess {
+  background: #fff;
+  width: 200px;
+  padding: 20px;
+  text-align: center;
+  margin: 10px auto;
+  font-size: 30px;
+}
+#win {
+  display: none;
+  background-image: url(img/win.png);
+  background-size: 50px 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 350px;
+  margin: 10px auto;
+  height: 65px;
+}
+#hide {
+  position: absolute;
+  background: #fff;
+  background-image: url(img/Warning.png);
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+  width: 200px;
+  height: 79px;
+  left: 50%;
+  margin-left: -100px;
+  bottom: 0;
+}
+/* Message Info */
+#message_info {
+  width: 100%;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+
+#message_info p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/*Main Area*/
+#main_body {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.input_area {
+  display: flex;
+  flex-basis: 48%;
+  margin-right: 4%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.input_area input {
+  border-radius: 5px;
+  padding: 10px;
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+#input {
+  background: #fff;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+#submit {
+  background: #6ab04c;
+  border: 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#submit:hover {
+  background: #badc58;
+}
+.status_area {
+  flex-basis: 48%;
+}

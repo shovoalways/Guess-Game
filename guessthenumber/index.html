@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header" class="container">
+      <div id="agin_btn">
+        <button id="again">Again</button>
+      </div>
+      <div class="top_info">
+        <p>< Between 1 to 20 ></p>
+      </div>
+    </header>
+    <section id="hero_area" class="container">
+      <h2>Guess The Number 👏</h2>
+      <div id="win"></div>
+      <div id="hide"></div>
+      <h3 id="guess">0</h3>
+    </section>
+    <section id="message_info" class="container">
+      <p class="message">
+        Guess Number Between 1 to 20 <img src="img/run.gif" alt="" />
+      </p>
+    </section>
+    <section id="main_body" class="container">
+      <div class="input_area">
+        <input type="text" id="input" placeholder="Number Only 1 to 20" />
+        <input type="submit" id="submit" value="Check!" />
+      </div>
+      <div class="status_area">
+        <!-- <p>🎉 Correct Number</p>
+        <p>😎 Its High Number</p>
+        <p>😒 Its Low Number</p> -->
+        <p>🥇Attampt : <span id="score">0</span></p>
+      </div>
+    </section>
+    <script src="scripts.js"></script>
+  </body>
+</html>
